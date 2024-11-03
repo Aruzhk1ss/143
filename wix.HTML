@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px olive rgb(#267, rgb(95, 118, 95), rgb(87, 87, 197));
+            background-color: beige;
+            width: 100%;
+        }
+        .menu-item {
+          width: 120%;
+          height: 69px;
+          background-color: #995; 
+          border-bottom:#267 20px solid;
+          list-style-type: none;
+          margin: 0%;
+          padding: 0%;
+        }
+        .menu-item a {
+          text-decoration: dotted;
+          color: rgb(255, 255, 62);
+          font-weight: bold;
+          display: block;
+          padding: 1em 2em;
+        }
+        .submenu {
+          list-style-type: circle;
+          border-top: #267;
+          display: block;
+          position: absolute;
+          background-color: #129;
+          padding: 10px;
+        }
+        .menu-item a:hover {
+          color: #797; 
+
+        }
+    </style>
+</head>
+<body>
+<nav class="menu"> <!-- добавляем контейнер для нашего меню  -->
+    <ul class="menu-list"><!-- создаем наше меню  -->
+      <li class="menu-item"><a href="#">Главная</a></li><!-- пункт основного меню  -->
+      <li class="menu-item">
+        <a href="#">Услуги</a><!-- пункт основного меню  -->
+        <ul class="submenu"><!-- создаем список дополнительного\выпадающего меню  -->
+          
+          <li><a href="#">Веб-разработка</a></li><!-- пункт дополнительного меню  -->
+          <li><a href="#">Мобильная разработка</a></li><!-- пункт дополнительного меню  -->
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Проекты</a><!-- пункт основного меню  -->
+        <ul class="submenu"><!-- создаем список дополнительного\выпадающего меню  -->
+          <li><a href="#">Проект</a></li><!-- пункт дополнительного меню  -->
+          <li><a href="#">Проект</a></li><!-- пункт дополнительного меню  -->
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#">Команда</a><!-- пункт основного меню  -->
+      </li>
+      <li class="menu-item">
+        <a href="#">Контакты</a><!-- пункт основного меню  -->
+      </li>
+    </ul>
+  </nav>
+    </nav>
+    <footer>
+      <p>Контактная информация: phone@mail.ru</p>
+      <p>Авторские права &copy; ELFEH 2023</p>
+    </footer>
+</body>
+</html>
